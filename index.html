@@ -7,17 +7,27 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
     <script src="p5.play.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-database.js"></script>
 
-    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
 
-
-    <script>
-      // Your web app's Firebase configuration
-      //Add here
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-    </script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCedHCiO8_A3NYEMw_xXQ4Fqje34zFlkUY",
+    authDomain: "multiplier-car--racing-game.firebaseapp.com",
+    databaseURL: "https://multiplier-car--racing-game.firebaseio.com",
+    projectId: "multiplier-car--racing-game",
+    storageBucket: "multiplier-car--racing-game.appspot.com",
+    messagingSenderId: "849748402854",
+    appId: "1:849748402854:web:a18a9e366d97ee9497ca67"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
 
     <script src="js/Player.js"></script>
     <script src="js/Form.js"></script>
